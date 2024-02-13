@@ -1,0 +1,162 @@
+:root { 
+    --saturated-blue: blue;
+    --gray-blue: rgb(64, 64, 85);
+    --marine-blue: rgb(0, 0, 78);
+    --light-blue: rgb(199, 199, 255);
+  }
+  
+  body{
+      background-color: var(--gray-blue);
+      animation:changeColor;
+      animation-duration: 4s;
+      animation-timing-function: ease-in-out;
+  }
+  @keyframes changeColor{
+    from{
+    background-color: var(--light-blue);
+    }
+    to{
+    background-color: var(--gray-blue);
+    }
+  }
+  div{
+    font-size: 50px;
+    text-align: center;
+    padding-top: 60px;
+    animation:slideIn;
+    animation-timing-function: ease-out;
+    animation-duration: 1s;
+    scale:1;
+  }
+  @keyframes slideIn{
+    from{
+      transform: scale(0.78);
+      padding-top: 0px;
+      color:var(--saturated-blue)
+    }
+    to{padding-top: 60px;}
+  }
+  #Lattioos{
+    font-family: Broadway;
+    animation: Latte;
+    animation-timing-function: ease-out;
+    animation-duration: 1.3s;
+    color:black;
+  }
+  @keyframes Latte{
+    from{
+      color:var(--saturated-blue);
+      transform: translateY(-50px);
+    }
+    to{
+    }
+  }
+  #Houssam{
+    font-family: Old English Text MT;
+    animation:Houss;
+    animation-timing-function: ease-out;
+    animation-duration: 1.4s;
+    letter-spacing: -5px;
+  }
+  #Houssam > span{
+    animation: swoop;
+    animation-timing-function: ease-out;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+  }
+  @keyframes swoop{
+    from{
+      color:rgb(255, 255, 255);
+    }
+    to{}
+  }
+  #Houssam > span:nth-child(1) {
+    animation-delay: 0.4s;
+}
+  #Houssam > span:nth-child(2) {
+    animation-delay: 0.5s;
+}
+#Houssam > span:nth-child(3) {
+  animation-delay: 0.6s;
+}
+#Houssam > span:nth-child(4) {
+  animation-delay: 0.7s;
+}
+#Houssam > span:nth-child(5) {
+  animation-delay: 0.8s;
+}
+#Houssam > span:nth-child(6) {
+  animation-delay: 0.9s;
+}
+#Houssam > span:nth-child(7) {
+  animation-delay: 1s;
+}
+#Houssam > span:nth-child(8) {
+  animation-delay: 1.1s;
+}
+#Houssam > span:nth-child(9) {
+  animation-delay: 1.2s;
+}
+  @keyframes Houss{
+    from{
+      transform: translateX(50px);
+    }
+    to{
+    }
+  }
+  #slash{
+    font-family:Broadway;
+    animation:up;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: infinite;
+  }
+  @keyframes up{
+    from{
+      color:rgb(255, 255, 255);
+    }
+    to{}
+
+  }
+  #age{
+    font-family: Elephant;
+  }
+  #bd{
+    font-family:elephant;
+  }
+  p > span{
+    animation-name: move;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    display: inline-block;
+    animation-iteration-count: infinite;
+    height: 100px;
+
+}
+p > span:nth-child(1) {
+    animation-delay: 0.5s;
+}
+p > span:nth-child(2) {
+    animation-delay: 1s;
+}
+@keyframes move{
+  from{
+      transform:scale(1.125);
+      color:rgb(255, 255, 255);
+      }
+  to{
+ color:black;
+  }
+}
+#click{
+  font-family:elephant;
+  color: rgb(0, 1, 56);
+}
+#back{
+ text-align: left;
+ font-family:cooper;
+ color:rgb(175, 210, 255)
+}
+a{
+  text-decoration: none;
+}
